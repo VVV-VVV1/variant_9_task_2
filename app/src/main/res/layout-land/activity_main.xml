@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputTemperatureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter temperature"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/fromScaleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputTemperatureEditText"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/toScaleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromScaleSpinner"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toScaleSpinner"
+        android:layout_marginTop="16dp"
+        android:hint="Result"
+        android:inputType="none"
+        android:enabled="false"
+        android:focusable="false"/>
+</RelativeLayout>

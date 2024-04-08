@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">variant_9_task_2</string>
+    <string-array name="temperature_scales">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvins</item>
+        <item>Renovation</item>
+        <item>Rankine</item>
+    </string-array>
+</resources>
